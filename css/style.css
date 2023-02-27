@@ -55,6 +55,7 @@ justify-content: space-around;
 }
 .footer .logo-secondary{
     color: var(--bg-color-white);
+    padding: 0;
 }
 
 .footer .logo-primary,
@@ -448,7 +449,7 @@ letter-spacing: 0.03em;
 
 /* Footer */
 .footer{
-display: flex;
+display: block;
 height: 252px;
 background-color:var(--bg-color-black);
 font-weight: 400;
@@ -457,13 +458,13 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 }
 .container-footer{
-    display: flex;
-    align-items: center;
+    
 }
 .footer-title{
     display: flex;
     justify-content: center;
     padding: 0; 
+    margin: 0;
 }
 .footer-title .icon{
     display:flex;
@@ -480,6 +481,11 @@ letter-spacing: 0.03em;
 .text-footer{
     display: flex;
     align-items: center;
+    
+    
+    text-transform: uppercase;
+    padding-bottom: 20px;
+   
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -487,7 +493,7 @@ font-size: 14px;
 line-height: 1.15;
 letter-spacing: 0.03em;
 color: #FFFFFF;
-padding: 0;
+
 margin: 0;
 }
 .footer .section{
@@ -501,6 +507,18 @@ margin-left: auto;
 margin-right: auto;
 align-items: center;
 justify-content: space-around;
+}
+.container-footer .section1{
+    display: block;
+    padding-bottom:60px ;
+    padding-top: 60px;
+
+}
+.container-footer .section2{
+    display: block;
+    margin-left: 70px;
+    padding-top: 72px;
+    padding-bottom: 100px;
 }
 .address{
     color: var(--bg-color-white);
@@ -520,13 +538,21 @@ display: flex;
 }
 .mailing input{
     display: flex;
+    
+    height: 46px;
+    width: 358px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 360px;
-    height: 50px;
+
     background: #2F303A;
     color: rgba(255, 255, 255, 0.6);;
+    padding-left: 16px;
 
 }
 .mailing label{
@@ -535,10 +561,36 @@ display: flex;
 .mailing .mail{
 
 }
-.kokii{
-  align-items: baseline;
+.loi{
+    margin-left: 90px;
+    padding-top: 72px;
+    padding-bottom: 94px;
 }
+.button-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+width: 200px;
+height: 50px;
+    border-radius: 4px;
+    color: var(--bg-color-white);
+    background-color: var(--accent-color); 
+    font-weight: 700;
+    font-size: 16px;
+    line-height:1.88;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    background-image: url();
+    
+    
+}
+.mi{
+    padding-top: 104px;
+    padding-bottom: 91px;
+    padding-left: 10px;
 
+}
     
 /* PORTFOLIO *//* PORTFOLIO *//* PORTFOLIO *//* PORTFOLIO *//* PORTFOLIO *//* PORTFOLIO */
 
