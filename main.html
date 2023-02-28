@@ -50,11 +50,41 @@
             
         </section>
     </div>
+    <!--  -->
     <div class="backdrop is-hidden" data-backdrop>
         <div class="modal">
-<a data-close-modal >X</a>
+            <svg data-close-modal class="modal-icon" height="30" width="30">
+                <use href="./img/symbol1-defs.svg#icon-close"></use>
+            </svg>  
+            <h1 class="modal-text">Оставьте свои данные, мы вам перезвоним</h1>
+            <form class="form-modal">
+                <div class="form-div">
+                            
+                    <input type="text" name="name" class="form-input" >
+                    <label for="" class="form-label">
+                        <svg class="icon" height="18" width="18" >
+                            <use href="./img/symbol1-defs.svg#icon-person"></use>
+                         </svg> 
+                          Имя</label>
+                    
+                </div>
+                <div class="form-div">
+                    <input type="tel" name="tel" class="form-input" >
+                    <label for="" class="form-label">Телефон</label>
+                </div>
+                <div class="form-div">
+                    <input type="email" name="email" class="form-input" >
+                    <label for="" class="form-label">Почта</label>
+                </div>  
+                <div class="textarea">
+                    <label>Комментарий</label>
+                    <textarea name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                    
+                </div>
+        </form>
         </div>
     </div>
+    <!--  -->
         <!--SECTION ADVANTAGE -->
     <div class="container">
         <section class="section-title">
@@ -383,9 +413,10 @@
             </div>
         </div>
         <div class="mi">
-            <a href="" class="button-footer">Подписаться
-                <img src="./img/icon send.svg" alt="">
-            </a>
+            <h2 class="text">Подписаться</h2>
+            <svg height="24" width="24" class="svg" >
+                <use href="./img/symbol1-defs.svg#icon-send"></use>
+            </svg>
         </div>
     </div>            
 </footer>

@@ -87,6 +87,7 @@ justify-content: space-around;
     
 }
 .backdrop.is-hidden{
+    
     opacity: 0;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(.17,.67,.83,.67);
@@ -100,15 +101,66 @@ justify-content: space-around;
 }
 
 .modal{
-    position: absolute;
-    width: 400px;
-    height: 600px;
+    position: relative;
+    width: 528px;
+    height: 581px;
     background-color: #fff;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     
-
+}
+.modal-icon{
+    display: block;
+    margin-left: auto;
+    padding-right: 8px;
+    padding-top: 8px;
+    
+}
+.modal-icon:hover{
+ fill: #2196F3;
+}
+.form-modal{
+    padding-top: 30px;
+padding-bottom: 40px;
+padding-left: 40px;
+padding-right: 40px;
+}
+.modal-text{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+.form-div{
+    position: relative;
+    margin-bottom: 30px;
+}
+.form-input:focus + .form-label{
+    color:var(--accent-color)
+    
+}
+.form-label{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%)
+    
+    
+}
+.form-div .icon{
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+}
+.form-input{
+    width: 448px;
+    height: 37px;
 }
 /* SITE-NAV */
 .site-nav{
@@ -586,12 +638,40 @@ height: 50px;
     
 }
 .mi{
-    padding-top: 104px;
-    padding-bottom: 91px;
-    padding-left: 10px;
+display:flex;
+align-items: center;
+    text-align: center;
+    margin-top: 16px;
+    margin-left: 12px;
+min-width: 200px;
+height: 50px;
+border-radius: 4px;
+color: var(--bg-color-white);
+background-color: var(--accent-color); 
 
 }
+.mi .text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding-left: 30px;
+
+
     
+}
+.mi .svg{
+  fill: #FFFFFF;  
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 10px;
+ }  
+
 /* PORTFOLIO *//* PORTFOLIO *//* PORTFOLIO *//* PORTFOLIO *//* PORTFOLIO *//* PORTFOLIO */
 
 
