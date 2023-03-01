@@ -65,22 +65,41 @@
                         <svg class="icon" height="18" width="18" >
                             <use href="./img/symbol1-defs.svg#icon-person"></use>
                          </svg> 
-                          Имя</label>
+                          Имя
+                        </label>
                     
                 </div>
                 <div class="form-div">
                     <input type="tel" name="tel" class="form-input" >
-                    <label for="" class="form-label">Телефон</label>
+                    <label for="" class="form-label">
+                        <svg class="icon" height="18" width="18" >
+                            <use href="./img/symbol1-defs.svg#icon-phone"></use>
+                         </svg>
+                        Телефон
+                    </label>
                 </div>
                 <div class="form-div">
                     <input type="email" name="email" class="form-input" >
-                    <label for="" class="form-label">Почта</label>
+                    <label for="" class="form-label">
+                        <svg class="icon" height="18" width="18" >
+                            <use href="./img/symbol1-defs.svg#icon-email"></use>
+                         </svg>
+                        Почта
+                    </label>
                 </div>  
                 <div class="textarea">
-                    <label>Комментарий</label>
-                    <textarea name="feedback" rows="5" placeholder="Введите текст"></textarea>
-                    
+                    <label for="comment" class="comment">Комментарий</label>
+                    <textarea class="form" name="feedback" placeholder="Введите текст"></textarea>
                 </div>
+                <div class="agreement" >
+                    <input type="checkbox" name="agreement" value="agreement" checked />    
+                    <label for="text" class="text">Соглашаюсь с рассылкой и принимаю 
+                         <a href="" class="link">Условия договора</a>
+                    </label>
+                </div>
+                <button class="modal-button">Отправить</button>
+                    
+                
         </form>
         </div>
     </div>
@@ -412,11 +431,13 @@
             <input type="email" name="mail" id="mail" placeholder="E-mail" />
             </div>
         </div>
-        <div class="mi">
-            <h2 class="text">Подписаться</h2>
+        <div class="">
+            <a href="" class="mi">
+                <h2 class="text">Подписаться</h2>
             <svg height="24" width="24" class="svg" >
                 <use href="./img/symbol1-defs.svg#icon-send"></use>
             </svg>
+            </a>
         </div>
     </div>            
 </footer>
