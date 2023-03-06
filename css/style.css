@@ -383,22 +383,26 @@ text-decoration: none;
 
 
 
+
 /* HERO */
-.hero{
-background-image: linear-gradient(
- to right,
+.section-hero{
+  background-image: linear-gradient(
+  to right,
  rgba(47, 48, 58, 0.4),
  rgba(47, 48, 58, 0.4)
  ), url(../img/Img.jpg);
   background-repeat: no-repeat;
- background-size: cover;
- background-position: center;
+  background-size: cover;
+  background-position: center;
 text-align: center;
 height: 600px;    
-margin-bottom: 95px;
+margin-bottom: 95px;  
+}
+.container-hero{
+    align-items: center;
 }
 
-.hero .title{
+.container-hero__title{
 padding-top: 200px;
 margin: 0px;
 color: var(--bg-color-white);   
@@ -430,8 +434,35 @@ margin-top: 40px;
 }
  
 
-/* advantage */
-.list-title .title{
+/* features */
+.features-link{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0;
+padding: 0;
+}
+.features-link__item{
+width: 270px;
+height: 251px;
+display: block;
+content:"";
+background-repeat: no-repeat;
+background-position: center;
+margin-right: 30px;
+}
+.features-link__item:last-child{
+    margin: 0;
+}
+.features-link__image{
+display: flex;
+background-color: #F5F4FA;
+width: 270px;
+height: 120px;
+align-items: center;
+justify-content: center;
+}
+.features-link__title{
 color: var(--primary-text-color);
 font-weight: 700;
 font-size: 14px;
@@ -440,19 +471,9 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-bottom: 10px;
 margin-top: 0;
-padding-top: 30px;
-
+padding-top: 30px;    
 }
-.list-title:{
-    content:"";
-    display:block;
-    height: 120px;
-    width: 270px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 95px;
-}
-.advantage-link .paragraph{
+.features-link__paragraph{
 color: var(--second-text-color);
 font-weight: 400;
 font-size: 14px;
@@ -460,24 +481,15 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 margin: 0;
 padding: 0; 
-}   
-
-.advantage-link{
-display: flex;
-margin: 0;
-padding: 0;
 }
-.features{
-   
-    display: flex;
-    background-color: #F5F4FA;
-    width: 270px;
-    height: 120px;
-    align-items: center;
-    justify-content: center;
-}
+/* features end */
 
-/* WORK */
+
+
+
+
+
+
 .section-title .link{  
 font-weight: 700;
 font-size: 36px;
@@ -541,6 +553,7 @@ text-transform: uppercase;
 }
 
 /* TEAM */
+
 .employee-link {
     text-align: center;
     display:flex;
